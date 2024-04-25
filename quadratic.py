@@ -1,4 +1,3 @@
-# Replace the "ANSWER HERE" for your answer
 import math
 
 def roots(a, b, c):
@@ -7,10 +6,10 @@ def roots(a, b, c):
     if discriminant > 0:
         root1 = (-b + math.sqrt(discriminant)) / (2*a)
         root2 = (-b - math.sqrt(discriminant)) / (2*a)
-        return f"({root1}, {root2})"
+        return f"({root1:.1f}, {root2:.1f})"
     elif discriminant == 0:
         root = -b / (2*a)
-        return f"({root})"
+        return f"({root:.1f})"
     else:
         return "()"
 
@@ -25,17 +24,3 @@ def to_string(a, b, c):
 def derivation(a, b, c):
     """Given the parameters a, b, and c, return a string representing the derivative of the quadratic equation."""
     return f"f'(x) = {2*a}x + {b}"
-
-# Ejemplos
-print(roots(1, -3, 2)) # Retorna: "(2.0, 1.0)"
-print(roots(1, -2, 1)) # Retorna: "(1.0)"
-print(roots(1, 2, 3))  # Retorna: "( )"
-
-print(value_y(1, -3, 2, 0)) # Retorna: 2
-print(value_y(1, -3, 2, 1)) # Retorna: 0
-print(value_y(1, -3, 2, -1)) # Retorna: 6
-
-print(to_string(2, -3, 1)) # Retorna: "f(x) = 2 * X^2 + -3 * X + 1"
-
-print(derivation(2, -3, 1)) # Retorna: "f'(x) = 4x + -3"
-
