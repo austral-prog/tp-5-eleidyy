@@ -24,3 +24,16 @@ def to_string(a, b, c):
 def derivation(a, b, c):
     """Given the parameters a, b, and c, return a string representing the derivative of the quadratic equation."""
     return f"f'(x) = {2*a}x + {b}"
+
+# Ejemplos
+print(roots(1, -3, 2)) # Retorna: "(2.0, 1.0)"
+print(roots(1, -2, 1)) # Retorna: "(1.0)"
+print(roots(1, 2, 3))  # Retorna: "( )"
+
+print(value_y(1, -3, 2, 0)) # Retorna: 2
+print(value_y(1, -3, 2, 1)) # Retorna: 0
+print(value_y(1, -3, 2, -1)) # Retorna: 6
+
+print(to_string(2, -3, 1)) # Retorna: "f(x) = 2 * X^2 + -3 * X + 1"
+
+print(derivation(2, -3, 1)) # Retorna: "f'(x) = 4x + -3"
